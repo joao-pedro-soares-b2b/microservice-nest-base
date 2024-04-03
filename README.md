@@ -96,7 +96,7 @@ Para criar uma nova branch
 do tipo feature de maneira rápida, configure um alias global:
 
 ```bash
-git --global alias feature="!./scripts/git-feature.sh"
+git config --global alias.feature '!sh ./scripts/git-feature.sh'
 ```
 
 Agora, você pode criar features facilmente com:
