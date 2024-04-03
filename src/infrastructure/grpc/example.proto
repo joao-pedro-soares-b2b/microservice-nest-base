@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package example;
+
+service ExampleService {
+  rpc FindOneById(FindOneRequest) returns (ExampleEntity) {}
+  rpc Create(ExampleEntity) returns (ExampleEntity) {}
+}
+
+message FindOneRequest {
+  int32 id = 1;
+}
+
+message ExampleEntity {
+  int32 id = 1;
+  string custom_id = 2;
+  string name = 3;
+}
