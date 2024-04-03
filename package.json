@@ -1,9 +1,9 @@
 {
-  "name": "template-nest-base",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
+  "name": "microservice-nest-base",
+  "version": "1.0.0",
+  "description": "NestJS microservice base project",
+  "author": "João Pedro Soares",
+  "private": false,
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
