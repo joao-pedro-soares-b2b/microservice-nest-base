@@ -1,4 +1,4 @@
-import { ExampleEntity } from '@domain/entities/Example.entity';
+import { ExampleEntity } from '@domain/entities/example.entity';
 import { ExampleRepository } from '@domain/repositories/example.repository';
 import { CreateExampleUseCase } from '@domain/use-cases/createExample.use-case';
 import { Logger } from '@nestjs/common';

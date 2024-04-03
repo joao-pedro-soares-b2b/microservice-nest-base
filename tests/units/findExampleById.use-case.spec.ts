@@ -1,4 +1,4 @@
-import { ExampleEntity } from '@domain/entities/Example.entity';
+import { ExampleEntity } from '@domain/entities/example.entity';
 import { ExampleRepository } from '@domain/repositories/example.repository';
 import { FindExampleByIdUseCase } from '@domain/use-cases/findExampleById.use-case';
 import { HttpException, HttpStatus } from '@nestjs/common';
