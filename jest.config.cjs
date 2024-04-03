@@ -2,8 +2,6 @@
 const { pathsToModuleNameMapper } = require('ts-jest');
 const { compilerOptions } = require('./tsconfig.json');
 
-console.log('compilerOptions', compilerOptions.paths);
-
 const jestConfig = {
   preset: 'ts-jest',
   moduleDirectories: ['node_modules', '<rootDir>'],
