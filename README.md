@@ -16,9 +16,10 @@ Aqui, você encontra uma representação visual das estruturas de pastas do micr
       - **ENTITIES**: Representam as entidades de negócios e objetos do domínio.
       - **REPOSITORIES**: Interfaces para a camada de acesso a dados, abstraindo a lógica de persistência.
       - **USE-CASES**: Contêm a lógica de aplicação, coordenando o fluxo de dados entre a UI e o domínio.
-      - **GATEWAY**: Adaptadores para conexão com microserviços externos.
+      - **GATEWAY**: Interfaces para a camada de acesso a dados, abstraindo a lógica de gateways.
     - **INFRASTRUCTURE**: Detalhes técnicos que suportam as camadas de aplicação, como banco de dados e comunicação de rede.
       - **ADAPTERS**: Implementações concretas de interfaces, como adaptadores de banco de dados ou serviços externos.
+        - **GATEWAY**: Adaptadores para conexão com microserviços externos.
       - **DATABASE**: Configurações e scripts relacionados ao banco de dados.
       - **GRPC**: Interfaces protobuf para comunicação via gRPC.
     - **REPRESENTATION**: Define interfaces de usuário, incluindo adaptadores para frameworks MVC, APIs REST, etc.
