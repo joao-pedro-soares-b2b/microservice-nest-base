@@ -1,4 +1,4 @@
-import { CreateExampleDto } from '@domain/dto/createExample.dto';
+import { CreateExampleDto } from '@api/dtos';
 import { ExampleEntity } from '@domain/entities/Example.entity';
 import { ExampleRepository } from '@domain/repositories/example.repository';
 import { Inject, Injectable, Logger } from '@nestjs/common';

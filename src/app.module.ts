@@ -1,11 +1,11 @@
+import { AppController } from '@api/app.controller';
+import Configuration from '@config/config';
 import { CreateExampleUseCase } from '@domain/use-cases/createExample.use-case';
 import { FindExampleByIdUseCase } from '@domain/use-cases/findExampleById.use-case';
 import { ExampleAdapter } from '@infrastructure/adapters/example.adapter';
 import { PrismaDatabase } from '@infrastructure/database/prisma.database';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import Configuration from 'src/config/config';
-import { AppController } from './representation/app.controller';
 
 @Module({
   imports: [

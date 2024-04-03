@@ -1,4 +1,4 @@
-import { FindExampleByIdDto } from '@domain/dto/findExampleById.dto';
+import { FindExampleByIdDto } from '@api/dtos';
 import { ExampleEntity } from '@domain/entities/Example.entity';
 import { ExampleRepository } from '@domain/repositories/example.repository';
 import {
