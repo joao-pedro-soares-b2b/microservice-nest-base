@@ -1,4 +1,4 @@
-import { ExampleEntity } from '@domain/entities/Example.entity';
+import { ExampleEntity } from '@domain/entities/example.entity';
 import { PrismaDatabase } from '@infrastructure/database/prisma.database';
 import { Injectable } from '@nestjs/common';
 

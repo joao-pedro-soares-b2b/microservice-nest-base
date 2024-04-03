@@ -1,6 +1,5 @@
-import { CreateExampleDto } from '@domain/dto/createExample.dto';
-import { FindExampleByIdDto } from '@domain/dto/findExampleById.dto';
-import { ExampleEntity } from '@domain/entities/Example.entity';
+import { CreateExampleDto, FindExampleByIdDto } from '@api/dtos';
+import { ExampleEntity } from '@domain/entities/example.entity';
 import { CreateExampleUseCase } from '@domain/use-cases/createExample.use-case';
 import { FindExampleByIdUseCase } from '@domain/use-cases/findExampleById.use-case';
 import { Controller, UseFilters } from '@nestjs/common';

@@ -38,4 +38,4 @@ else
   git push --set-upstream origin "$feature"
 fi
 
-# Add alias $ git --global alias feature="!./scripts/git-feature.sh"
+# Add alias $ git config --global alias.feature '!sh ./scripts/git-feature.sh'

@@ -1,4 +1,4 @@
-# Template Nest Base - v1.0.0
+# Microsserviço Nest Base - v1.0.0
 
 Este repositório serve como um template padrão para microserviços escritos em NestJS, visando agilizar o desenvolvimento inicial de aplicações. Nosso objetivo é facilitar a colaboração da comunidade neste projeto, por isso, encorajamos contribuições que ajudem a melhorar e expandir este template.
 
@@ -8,20 +8,25 @@ Aqui, você encontra uma representação visual das estruturas de pastas do micr
 
 ![Folder Structure Image](./.github/images/folder_structure.png)
 
-[Esquema no Whimsical](https://whimsical.com/src-Vbaa59Rhkb55Wiv7iuwTp9)
+[Esquema no Whimsical](https://whimsical.com/folder-structure-SEmPne5aSCo1TcUbKDYQP4)
 
-- **SRC**: Pasta principal do aplicativo, contendo toda a lógica de negócios e o código-fonte.
-  - **DOMAIN**: Coração da lógica de negócios, definindo 'Entities' e 'Repositories'.
-    - **ENTITIES**: Representam as entidades de negócios e objetos do domínio.
-    - **REPOSITORIES**: Interfaces para a camada de acesso a dados, abstraindo a lógica de persistência.
-    - **USE-CASES**: Contêm a lógica de aplicação, coordenando o fluxo de dados entre a UI e o domínio.
-    - **GATEWAY**: Adaptadores para conexão com microserviços externos.
-  - **INFRASTRUCTURE**: Detalhes técnicos que suportam as camadas de aplicação, como banco de dados e comunicação de rede.
-    - **ADAPTERS**: Implementações concretas de interfaces, como adaptadores de banco de dados ou serviços externos.
-    - **DATABASE**: Configurações e scripts relacionados ao banco de dados.
-    - **GRPC**: Interfaces protobuf para comunicação via gRPC.
-  - **REPRESENTATION**: Define interfaces de usuário, incluindo adaptadores para frameworks MVC, APIs REST, etc.
-  - **CONFIG**: Configurações gerais usáveis em todo o aplicativo, como strings de conexão de banco de dados, variáveis de ambiente, etc.
+- **ROOT**: Raiz do projeto
+  - **SRC**: Pasta principal do aplicativo, contendo toda a lógica de negócios e o código-fonte.
+    - **DOMAIN**: Coração da lógica de negócios, definindo 'Entities' e 'Repositories'.
+      - **ENTITIES**: Representam as entidades de negócios e objetos do domínio.
+      - **REPOSITORIES**: Interfaces para a camada de acesso a dados, abstraindo a lógica de persistência.
+      - **USE-CASES**: Contêm a lógica de aplicação, coordenando o fluxo de dados entre a UI e o domínio.
+      - **GATEWAY**: Interfaces para a camada de acesso a dados, abstraindo a lógica de gateways.
+    - **INFRASTRUCTURE**: Detalhes técnicos que suportam as camadas de aplicação, como banco de dados e comunicação de rede.
+      - **ADAPTERS**: Implementações concretas de interfaces, como adaptadores de banco de dados ou serviços externos.
+        - **GATEWAY**: Adaptadores para conexão com microserviços externos.
+      - **DATABASE**: Configurações e scripts relacionados ao banco de dados.
+      - **GRPC**: Interfaces protobuf para comunicação via gRPC.
+    - **REPRESENTATION**: Define interfaces de usuário, incluindo adaptadores para frameworks MVC, APIs REST, etc.
+    - **CONFIG**: Configurações gerais usáveis em todo o aplicativo, como strings de conexão de banco de dados, variáveis de ambiente, etc.
+  - **TESTS**: Testes unitarios e testes de integração.
+    - **UNITS**: Testes voltados a funções da aplicação.
+    - **INTEGRATION**: Testes voltados as inteções que o serviço utiliza.
 
 ## Boas Práticas
 
@@ -96,7 +101,7 @@ Para criar uma nova branch
 do tipo feature de maneira rápida, configure um alias global:
 
 ```bash
-git --global alias feature="!./scripts/git-feature.sh"
+git config --global alias.feature '!sh ./scripts/git-feature.sh'
 ```
 
 Agora, você pode criar features facilmente com:
